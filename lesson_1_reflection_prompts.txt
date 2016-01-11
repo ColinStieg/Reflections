@@ -1,0 +1,57 @@
+How did viewing a diff between two versions of a file help you see the bug that 
+was introduced?
+
+    
+-It narrowed down the text to look at, but didn't highlight the actual typo.
+
+
+
+How could having easy access to the entire history of a file make you a more
+ efficient programmer in the long term?
+
+    
+-You can look for differences after making changes to help with troubleshoting.
+
+
+
+What do you think are the pros and cons of manually choosing when to create a
+ commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    
+-A commit is an instance, so each saved version. You should make a new commit, or version, after
+each logical change. For this reason, it's better to save manually than to have automatically 
+saved instances that may not be functional, because it may have saved in the middle of a line 
+or something. It might be good to have a backup version if you didn't save and had a crash or 
+something, so automatic saving isn't totally pointless either.
+
+
+
+Why do you think some version control systems, like Git, allow saving multiple 
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    
+-You may have multiple files associated with one commit. Each change may not be reflected across all the files associated with the commit, or it 
+the change may affect all the files associated. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+    
+Use git log to view the history of commits, check the comments for each to see which version you're interested in. Find the version ID and use git diff to compare it 
+with another commit. Be sure to press enter or the down arrow to scroll through the history in both commands. You can then see stuff like total lines added, deleted, etc.
+
+
+
+How might using version control make you more confident to make changes that 
+could break something?
+
+    
+You can use git checkout or git diff to look at older versions/commits and see the differences between them. You don't have to save any changes to the files while doing this
+and can go back to the latest version once you identify the issue.
+
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    
+Version control
