@@ -1,0 +1,57 @@
+﻿What happens when you initialize a repository? Why do you need to do it?
+
+
+	$ git init
+This creates a new subdirectory named .git that contains all of your necessary repository files – a Git repository skeleton. 
+At this point, nothing in your project is tracked yet. (See Git Internals for more information about exactly what files are contained in the .git directory you just created.)
+If you want to start version-controlling existing files (as opposed to an empty directory), you should probably begin tracking those files and do an initial commit. 
+You can accomplish that with a few git add commands that specify the files you want to track, followed by a git commit:
+
+git init
+git add
+git status
+staging area
+working directory
+
+	git add - If you accidentally add a file to the staging area, you can remove it using git reset. 
+For example, if you accidentally add lesson_2_reflections.txt, 
+but don’t want it to be committed yet, run git reset lesson_2_reflections.txt and the file will be removed from the staging area, 
+but it will still be in your working directory.
+
+How is the staging area different from the working directory and the repository? 
+What value do you think it offers?
+
+
+	With most other version control systems, there’s 2 places to store data: your working copy (the folders/files that you’re currently using) and the datastore 
+(where the version control decides how to pack and store your changes). 
+In Git there’s a third option: the staging area (or index). It’s basically a loading dock where you get to determine what changes get shipped away.
+Since the working directory and what gets saved by Git are essentially decoupled, this allows the developer to build up their commits however they want, 
+and not in a fashion where the VCS tells you. 
+Since there’s a layer between when Git actually saves the data, you gain a lot more flexibility and control.
+
+
+How can you use the staging area to make sure you have one commit per logical 
+change? 
+
+
+
+What are some situations when branches would be helpful in keeping your history 
+organized? 
+
+How would branches help?
+
+
+
+How do the diagrams help you visualize the branch structure?
+
+
+
+What is the result of merging two branches together? 
+
+Why do we represent it in
+the diagram the way we do?
+
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
